@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <polygon id="keyboard-arrow-down-a" points="6.645 8 12 13.343 17.355 8 19 9.645 12 16.645 5 9.645"/>
+  </defs>
+  <use fill-rule="evenodd" xlink:href="#keyboard-arrow-down-a"/>
+</svg>

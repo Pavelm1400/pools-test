@@ -1,0 +1,17 @@
+@import (reference) '../../less/variables.less';
+
+.container {
+    padding: 0 16px;
+
+
+    @media(min-width: @tablet-landscape) {
+        padding: 0 40px;
+    }
+
+    @media(min-width: @desktop-medium) {
+        max-width: 1440px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 64px;
+    }
+}

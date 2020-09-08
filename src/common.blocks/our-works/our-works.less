@@ -1,0 +1,56 @@
+@import (reference) '../../less/variables.less';
+
+.our-works {
+
+}
+
+.our-works__frame {
+
+}
+
+.our-works__slider {
+    .slider-pagination.swiper-pagination {
+        margin-top: 24px;
+    }
+    margin-bottom: 32px;
+
+    @media(min-width: @tablet-landscape) {
+        margin-bottom: 64px;
+    }
+
+    @media(min-width: @desktop-medium) {
+        .swiper-wrapper {
+            flex-wrap: wrap;
+        }
+
+        .swiper-slide {
+            height: unset;
+            flex-shrink: unset;
+            flex-basis: 50%;
+            display: flex;
+            padding: 15px 16px;
+        }
+
+        .slider-pagination.swiper-pagination {
+            display: none;
+        }
+    }
+}
+
+.our-works__more {
+    display: flex;
+    justify-content: center;
+}
+
+.our-works__button {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0.5px;
+    padding: 13px 8px;
+
+    @media(min-width: @tablet-landscape) {
+        font-size: 14px;
+        padding: 16px 20px;
+    }
+}

@@ -1,0 +1,73 @@
+@import (reference) '../../less/variables.less';
+
+.color-palette {
+    display: flex;
+    overflow-x: auto;
+
+    @media(min-width: @tablet-landscape) {
+        flex-wrap: wrap;
+
+        &_full_image {
+            margin-bottom: -30px;
+        }
+
+        &_contain_image {
+            margin-bottom: -14px;
+        }
+    }
+}
+
+.color-palette__item {
+
+
+    &_full_size {
+        &:not(:last-child) {
+            margin-right: 8px;
+        }
+
+        .color-palette__image {
+            background-size: cover;
+        }
+    }
+
+    &_contain_size {
+        &:not(:last-child) {
+            margin-right: 24px;
+        }
+
+        .color-palette__image {
+            background-size: contain;
+        }
+    }
+
+    @media(min-width: @tablet-landscape) {
+        flex: 0 0 104px;
+
+        &_full_size {
+            padding-bottom: 30px;
+        }
+
+        &_contain_size {
+            padding-bottom: 14px;
+        }
+    }
+}
+
+.color-palette__image {
+    width: 104px;
+    height: 72px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.color-palette__name {
+    margin-top: 16px;
+    padding: 0 6px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+
+    @media(min-width: @tablet-landscape) {
+    }
+}

@@ -1,0 +1,51 @@
+@import (reference) '../../less/variables.less';
+
+.menu-burger {
+    width: 21px;
+    height: 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.menu-burger__line {
+    width: 21px;
+    height: 2px;
+    background-color: @color-black-medium;
+    position: relative;
+    transition: all .2s ease;
+    &:before,
+    &:after {
+        display: block;
+        content: '';
+        width: 21px;
+        height: 2px;
+        background-color: @color-black-medium;
+        position: absolute;
+        left: 0;
+    }
+    &:before {
+        top: -6px;
+    }
+
+    &:after {
+        top: 6px;
+        transition: all .2s ease;
+    }
+}
+
+.menu-burger.is-active {
+    .menu-burger__line {
+        transform: rotate(-45deg);
+
+        &:before {
+            opacity: 0;
+        }
+
+        &:after {
+            transform: translateY(-6px) rotate(90deg);
+        }
+    }
+}

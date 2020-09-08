@@ -1,0 +1,33 @@
+@import (reference) '../../less/variables.less';
+
+.slider-navigation {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    z-index: 2;
+    padding: 0 40px;
+}
+
+.slider-navigation__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slider-navigation__button {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color .2s ease;
+}
+
+.slider-navigation__icon {
+    fill: @color-white;
+    width: 40px;
+    height: 40px;
+}

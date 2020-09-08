@@ -1,0 +1,210 @@
+@import (reference) '../../less/variables.less';
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 4px;
+    position: relative;
+    border: 1px solid transparent;
+    overflow: hidden;
+    z-index: 0;
+    transition: all .8s ease-in;
+
+    &:before {
+        display: block;
+        content: '';
+        position: absolute;
+        width: calc(100% + 600px);
+        height: 80px;
+        background-image: url('../../static/wave-bg.svg');
+        top: 100%;
+        right: 0;
+        transform: translate(0, 0);
+        transition: transform .8s ease-in;
+        z-index: -1;
+    }
+
+    &:hover {
+        background-color: @color-blue;
+        color: @color-white;
+        fill: @color-white;
+        border: 1px solid transparent;
+    }
+
+    &:hover:before {
+        transform: translate(600px, -100%);
+    }
+
+    &_size_s {
+        min-height: 40px;
+        padding: 12px 8px;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 1;
+        letter-spacing: 0.5px;
+
+        .button__caption {
+            margin-left: 4px;
+        }
+
+        .button__icon {
+            width: 16px;
+            height: 16px;
+            flex: 0 0 16px;
+        }
+    }
+
+    &_size_m {
+        min-height: 48px;
+        padding: 12px 20px;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1;
+        letter-spacing: 0.5px;
+
+        .button__caption {
+            margin-left: 8px;
+        }
+
+        .button__icon {
+            width: 24px;
+            height: 24px;
+            flex: 0 0 24px;
+        }
+    }
+
+    &_size_l {
+        min-height: 56px;
+        padding: 12px 24px;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1;
+        letter-spacing: 0.5px;
+
+        .button__caption {
+            margin-left: 8px;
+        }
+
+        .button__icon {
+            width: 32px;
+            height: 32px;
+            flex: 0 0 32px;
+        }
+    }
+
+    &_size_s_l {
+        min-height: 40px;
+        padding: 12px 8px;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 1;
+        letter-spacing: 0.5px;
+
+        .button__caption {
+            margin-left: 4px;
+        }
+
+        .button__icon {
+            width: 16px;
+            height: 16px;
+            flex: 0 0 16px;
+        }
+
+        @media(min-width: @desktop-small) {
+            min-height: 56px;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1;
+            letter-spacing: 0.5px;
+
+            .button__caption {
+                margin-left: 8px;
+            }
+
+            .button__icon {
+                width: 32px;
+                height: 32px;
+                flex: 0 0 32px;
+            }
+        }
+    }
+
+    &_size_m_l {
+        min-height: 48px;
+        padding: 12px 20px;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1;
+        letter-spacing: 0.5px;
+
+        .button__caption {
+            margin-left: 8px;
+        }
+
+        .button__icon {
+            width: 24px;
+            height: 24px;
+            flex: 0 0 24px;
+        }
+
+        @media(min-width: @desktop-small) {
+            min-height: 56px;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1;
+            letter-spacing: 0.5px;
+
+            .button__icon {
+                width: 32px;
+                height: 32px;
+                flex: 0 0 32px;
+            }
+        }
+    }
+
+    &_color_white {
+        color: @color-blue;
+        border: 1px solid @color-blue;
+        fill: @color-blue;
+        background-color: @color-white;
+    }
+
+    &_color_blue {
+        color: @color-white;
+        border: 1px solid @color-blue;
+        fill: @color-white;
+        background-color: @color-blue;
+    }
+
+    &_mobile_short {
+
+        .button__icon {
+            display: none;
+        }
+
+        .button__caption {
+            margin-left: 0;
+        }
+
+        @media(min-width: @desktop-small) {
+            .button__icon {
+                display: block;
+            }
+
+            .button__caption {
+                margin-left: 8px;
+            }
+        }
+    }
+}
+
+.button__icon {
+
+}
+
+

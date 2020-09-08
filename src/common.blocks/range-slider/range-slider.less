@@ -1,0 +1,55 @@
+@import (reference) '../../less/variables.less';
+
+.range-slider {
+
+}
+
+.range-slider__frame {
+    padding: 0 10px;
+
+    .slider.slider-horizontal {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .slider.slider-horizontal .slider-track,
+    .slider-selection,
+    .slider-track-low,
+    .slider-track-high {
+        background-image: none;
+        background-color: @color-blue;
+        box-shadow: none;
+        border-radius: unset;
+    }
+
+    .slider.slider-horizontal .slider-track {
+        margin-top: 0;
+        height: 1px;
+    }
+
+    .slider-handle {
+        width: 20px;
+        height: 20px;
+        background-image: none;
+        border: 1px solid @color-blue;
+        background-color: #ffffff;
+    }
+
+    .slider.slider-horizontal .tooltip {
+        transform: none;
+        margin-top: 28px;
+        margin-left: -10px;
+        margin-right: -10px;
+        top: 0;
+    }
+}
+
+.range-slider__input {
+
+    &_length {
+
+    }
+}
+
+

@@ -1,0 +1,68 @@
+@import (reference) '../../less/variables.less';
+
+.accordion {
+
+
+    &.is-open {
+        .accordion__title {
+            color: @color-blue;
+        }
+
+        .accordion__arrow {
+            transform: rotate(180deg);
+            fill: @color-blue;
+        }
+
+        .accordion__body {
+            padding: 16px 0 0;
+            width: 100%;
+            max-height: 3000px;
+            opacity: 1;
+            pointer-events: auto;
+            transition: max-height .2s ease-in-out;
+        }
+    }
+}
+
+.accordion__frame {
+}
+
+.accordion__header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+
+    &:hover {
+        .accordion__title {
+            color: @color-blue;
+        }
+
+        .accordion__arrow {
+            fill: @color-blue;
+        }
+    }
+}
+
+.accordion__title {
+    transition: color .2s ease;
+    flex: 0 1 auto;
+    padding-right: 8px;
+}
+
+.accordion__arrow {
+    width: 24px;
+    height: 24px;
+    flex: 0 0 24px;
+    transition: all .2s ease;
+}
+
+.accordion__body {
+    width: 0;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0;
+    transition: max-height .3s ease;
+    pointer-events: none;
+}

@@ -1,0 +1,35 @@
+@import (reference) '../../less/variables.less';
+
+.header-links {
+
+}
+
+.header-links__frame {
+    display: flex;
+}
+
+.header-links__item {
+
+    &:not(:last-child) {
+        margin-right: 16px;
+    }
+
+    @media(min-width: @desktop-small) {
+        &:not(:last-child) {
+            margin-right: 40px;
+        }
+    }
+}
+
+
+.header-links__link {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 2;
+    color: @color-blue;
+    transition: color .2s ease;
+
+    &:hover {
+        color: @color-blue-lighter;
+    }
+}

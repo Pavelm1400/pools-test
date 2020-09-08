@@ -1,0 +1,112 @@
+@import (reference) '../../less/variables.less';
+
+.calculate-block {
+
+    &_color_blue {
+        background-color: @color-blue-darker;
+        color: @color-white;
+
+        .calculate-block__list-item {
+            &:before {
+                background-color: @color-white;
+            }
+        }
+    }
+
+    &_color_white {
+        background-color: @color-blue-darker;
+        color: @color-white;
+
+        .calculate-block__list-item {
+            &:before {
+                background-color: @color-white;
+            }
+        }
+        @media(min-width: @desktop-small) {
+            background-color: rgba(22, 35, 51, 0.05);
+            color: @color-main;
+
+            .calculate-block__list-item {
+                &:before {
+                    background-color: @color-blue;
+                }
+            }
+        }
+    }
+}
+
+.calculate-block__frame {
+    padding: 16px;
+
+    @media(min-width: @desktop-small) {
+        padding: 40px;
+    }
+}
+
+.calculate-block__title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 20px;
+
+    @media(min-width: @desktop-small) {
+        margin-bottom: 26px;
+        font-size: 28px;
+
+        &_size_l {
+            font-size: 35px;
+            font-weight: 500;
+            margin-bottom: 32px;
+        }
+    }
+}
+
+.calculate-block__list {
+
+}
+
+.calculate-block__list-item {
+    font-size: 14px;
+    line-height: 1.4;
+    position: relative;
+    padding-left: 12px;
+
+    &:not(:last-child) {
+        margin-bottom: 8px;
+    }
+
+    &:before {
+        content: '';
+        display: block;
+        border-radius: 4px;
+        width: 4px;
+        height: 4px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: translateY(8px);
+    }
+
+    @media(min-width: @desktop-small) {
+        font-size: 16px;
+
+        &:before {
+            transform: translateY(9px);
+        }
+    }
+}
+
+.calculate-block__button {
+    margin-top: 52px;
+
+    &_justify_center {
+        display: flex;
+        justify-content: center;
+    }
+
+    @media(min-width: @desktop-small) {
+        &_indent_xl {
+            margin-top: 112px;
+        }
+    }
+}

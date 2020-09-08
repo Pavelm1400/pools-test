@@ -1,0 +1,32 @@
+@import (reference) '../../less/variables.less';
+
+.product-grid {
+
+}
+
+.product-grid__frame {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -12px -6px;
+
+    @media(min-width: @desktop-small) {
+        margin: -16px;
+    }
+}
+
+.product-grid__item {
+    flex-basis: 50%;
+    padding: 12px 6px;
+
+    @media(min-width: 550px) {
+        flex-basis: calc(100% / 3);
+    }
+
+    @media(min-width: @tablet-landscape) {
+        flex-basis: 25%;
+    }
+
+    @media(min-width: @desktop-small) {
+        padding: 16px;
+    }
+}

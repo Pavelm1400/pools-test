@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pools</title>
+    <meta name="theme-color" content="#ffffff">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body class="body">
+
+<header class="header">
+    <div class="container">
+        <div class="header__frame">
+            <div class="header__top">
+                <div class="header__back-button">
+                    <a href="/" class="header__back-link">
+                        <svg class="header__back-icon">
+                            <use xlink:href="#arrow-left-long"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="header__left-side">
+                    <div class="header__logo">
+                        <div class="logo">
+                            <a href="/" class="logo__icon">
+                                <img src="./common.blocks/logo/img/logo-image.png" alt="Logo-image" class="logo__image">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header__links">
+                        <div class="header-links">
+                            <div class="header-links__frame">
+                                <div class="header-links__item">
+                                    <a href="#" class="header-links__link">
+                                        О компании
+                                    </a>
+                                </div>
+                                <div class="header-links__item">
+                                    <a href="catalog.html" class="header-links__link">
+                                        Каталог
+                                    </a>
+                                </div>
+                                <div class="header-links__item">
+                                    <a href="#" class="header-links__link">
+                                        Наши работы
+                                    </a>
+                                </div>
+                                <div class="header-links__item">
+                                    <a href="#" class="header-links__link">
+                                        Контакты
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__right-side">
+                    <div class="header__contact">
+                        <div class="header-contact">
+                            <svg class="header-contact__icon">
+                                <use xlink:href="#phone"></use>
+                            </svg>
+                            <a href="tel:+78412258065" class="header-contact__link">
+                                +7 (8412) 25 80 65
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header__feedback">
+                        <button class="js-feedback__button button button_size_s button_color_white">
+                            <svg class="button__icon">
+                                <use xlink:href="#alarm"></use>
+                            </svg>
+                            <span class="button__caption">
+                                        Позвоните мне
+                                    </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="header__menu-burger">
+                    <div class="menu-burger">
+                        <div class="menu-burger__inner">
+                            <div class="menu-burger__line"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__bottom">
+                <nav class="site-nav">
+                    <div class="site-nav__frame">
+                        <div class="site-nav__item">
+                            <a href="#" class="site-nav__link">
+                                Композитные бассейны
+                            </a>
+                        </div>
+                        <div class="site-nav__item">
+                            <a href="#" class="site-nav__link">
+                                Бетонные бассейны
+                            </a>
+                        </div>
+                        <div class="site-nav__item">
+                            <a href="#" class="site-nav__link">
+                                Купели
+                            </a>
+                        </div>
+                        <div class="site-nav__item">
+                            <a href="#" class="site-nav__link">
+                                Материалы для отделки
+                            </a>
+                        </div>
+                        <div class="site-nav__item">
+                            <a href="#" class="site-nav__link">
+                                Оборудование
+                            </a>
+                        </div>
+                        <div class="site-nav__item">
+                            <a href="#" class="site-nav__link">
+                                Химия для бассейнов
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="page-inner page-inner_unpadded_top_s">
+    <main class="main">
+        <div class="page-content">
+            <div class="page-content__mobile-crumb">
+                <a href="category.html" class="page-content__crumb-link">
+                    Композитные бассейны
+                </a>
+            </div>
+            <div class="page-content__breadcrumbs container">
+                <div class="breadcrumbs-wrapper">
+                    <ol class="breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                            <a class="breadcrumbs__link" href="/" itemprop="item">
+                                <span itemprop="name">Главная страница</span>
+                            </a>
+                            <meta itemprop="position" content="0" />
+                            <svg class="breadcrumbs__arrow" focusable="false">
+                                <use xlink:href="#arrow-right"></use>
+                            </svg>
+                        </li>
+                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                            <a class="breadcrumbs__link" href="catalog.html" itemprop="item">
+                                <span itemprop="name">Каталог</span>
+                            </a>
+                            <meta itemprop="position" content="1" />
+                            <svg class="breadcrumbs__arrow" focusable="false">
+                                <use xlink:href="#arrow-right"></use>
+                            </svg>
+                        </li>
+                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                            <a class="breadcrumbs__link" href="category.html" itemprop="item">
+                                <span itemprop="name">Композитные бассейны</span>
+                            </a>
+                            <meta itemprop="position" content="2" />
+                            <svg class="breadcrumbs__arrow" focusable="false">
+                                <use xlink:href="#arrow-right"></use>
+                            </svg>
+                        </li>
+                        <li class="breadcrumbs__item is-active" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                            <span class="breadcrumbs__link" itemprop="item">
+                                <span itemprop="name">Четвертый уровень</span>
+                            </span>
+                            <meta itemprop="position" content="3" />
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="page-content__wrapper page-content__wrapper_indent_xs">
+                <div class="container">
+                    <div class="product-page">
+                        <div class="product-page__frame">
+                            <div class="product-page__content">
+                                <div class="product-page__view">
+                                    <div class="product-page__main-slider  lightgallery-items">
+                                        <div class="swiper-container">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <a href="${require('./common.blocks/product-page/img/pool-main.jpg')}" class="product-page__main-view lightgallery-item">
+                                                        <span class="product-page__view-overlay">
+                                                            <svg class="product-page__overlay-icon">
+                                                                <use xlink:href="#zoom"></use>
+                                                            </svg>
+                                                        </span>
+                                                        <div class="product-page__main-picture" style="background-image: url(${require('./common.blocks/product-page/img/pool-main.jpg')})"></div>
+                                                    </a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a href="${require('./common.blocks/product-page/img/pool-main.jpg')}" class="product-page__main-view lightgallery-item">
+                                                        <span class="product-page__view-overlay">
+                                                            <svg class="product-page__overlay-icon">
+                                                                <use xlink:href="#zoom"></use>
+                                                            </svg>
+                                                        </span>
+                                                        <div class="product-page__main-picture" style="background-image: url(${require('./common.blocks/product-page/img/pool-main.jpg')})"></div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-page__thumbs">
+                                        <div class="swiper-container">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div  class="product-page__thumb-view">
+                                                        <div class="product-page__thumb-picture" style="background-image: url(${require('./common.blocks/product-page/img/pool-main.jpg')})"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div  class="product-page__thumb-view">
+                                                        <div class="product-page__thumb-picture" style="background-image: url(${require('./common.blocks/product-page/img/pool-main.jpg')})"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-page__description">
+                                    <h1 class="product-page__title">
+                                        Ривьера
+                                    </h1>
+                                    <div class="product-page__params">
+                                        <div class="product-page__param-item">
+                                            <div class="product-param">
+                                                <div class="product-param__name">
+                                                    Длина
+                                                </div>
+                                                <div class="product-param__value">
+                                                    12м
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-page__param-item">
+                                            <div class="product-param">
+                                                <div class="product-param__name">
+                                                    Ширина
+                                                </div>
+                                                <div class="product-param__value">
+                                                    12м
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-page__param-item">
+                                            <div class="product-param">
+                                                <div class="product-param__name">
+                                                    Глубина
+                                                </div>
+                                                <div class="product-param__value">
+                                                    12м
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-page__param-item">
+                                            <div class="product-param">
+                                                <div class="product-param__name">
+                                                    Объем
+                                                </div>
+                                                <div class="product-param__value">
+                                                    12м
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-page__info">
+                                        <div class="product-page__text">
+                                            <div class="product-page__price">
+                                                255 982 ₽
+                                            </div>
+                                            <div class="product-page__caption">
+                                                Цена базовой комплектации. Конечная стоимость зависит от выбранных аксессуаров и оборудования
+                                            </div>
+                                        </div>
+                                        <div class="product-page__price-button">
+                                            <button class="js-feedback__button button">Рассчиать стоимость</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-page__tabs">
+                                <div class="product-tabs">
+                                    <div class="product-tabs__frame">
+                                        <div class="product-tabs__panel-items">
+                                            <div data-tab-order="1" class="product-tabs__button">
+                                                Описание
+                                            </div>
+                                            <div data-tab-order="2" class="product-tabs__button">
+                                                Фотографии (6)
+                                            </div>
+                                            <div data-tab-order="3" class="product-tabs__button">
+                                                Цвета покрытий (17)
+                                            </div>
+                                            <div data-tab-order="4" class="product-tabs__button is-active">
+                                                Варианты отделки
+                                            </div>
+                                            <div data-tab-order="5" class="product-tabs__button">
+                                                Опции
+                                            </div>
+                                            <div data-tab-order="6" class="product-tabs__button">
+                                                Сопутствующие товары
+                                            </div>
+                                            <div data-tab-order="7" class="product-tabs__button">
+                                                Доставка
+                                            </div>
+                                        </div>
+                                        <div class="product-tabs__content-items">
+                                            <div data-tab-order="1" class="product-tabs__layer">
+                                                <div class="product-tabs__layer-frame">
+                                                    <div class="product-description">
+                                                        <div class="product-description__content">
+                                                            Адресован тем, для кого размер имеет значение.
+                                                            Внушительный по размеру бассейн станет гордостью Вашей семьи.
+                                                            Спортивная плавательная дорожка позволит полноценно заниматься спортом. Э
+                                                            ргономичный подводный диван — прекрасное место для загара, гидромассажа и наслаждения в воде.
+                                                            Уютная зона бара с изящным коктейльным столиком — незаменимая опция для
+                                                             истинного отдыха жарким летом. Эти удобные дополнительные опции создают
+                                                            гармонию спортивного и многофункционального бассейна.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div data-tab-order="2" class="product-tabs__layer">
+                                                <div class="product-tabs__layer-frame">
+                                                    <div class="product-photos">
+                                                        <div class="product-photos__item product-photos__item_size_s">
+                                                            <div class="product-photos__image" style="background-image: url(${require('./common.blocks/product-photos/img/photo-ex.jpg')})"></div>
+                                                        </div>
+                                                        <div class="product-photos__item product-photos__item_size_s">
+                                                            <div class="product-photos__image" style="background-image: url(${require('./common.blocks/product-photos/img/photo-ex.jpg')})"></div>
+                                                        </div>
+                                                        <div class="product-photos__item product-photos__item_size_s">
+                                                            <div class="product-photos__image" style="background-image: url(${require('./common.blocks/product-photos/img/photo-ex.jpg')})"></div>
+                                                        </div>
+                                                        <div class="product-photos__item product-photos__item_size_s">
+                                                            <div class="product-photos__image" style="background-image: url(${require('./common.blocks/product-photos/img/photo-ex.jpg')})"></div>
+                                                        </div>
+                                                        <div class="product-photos__item product-photos__item_size_s">
+                                                            <div class="product-photos__image" style="background-image: url(${require('./common.blocks/product-photos/img/photo-ex.jpg')})"></div>
+                                                        </div>
+                                                        <div class="product-photos__item product-photos__item_size_s">
+                                                            <div class="product-photos__image" style="background-image: url(${require('./common.blocks/product-photos/img/photo-ex.jpg')})"></div>
+                                                        </div>
+                                                        <div class="product-photos__item product-photos__item_size_s">
+                                                            <div class="product-photos__image" style="background-image: url(${require('./common.blocks/product-photos/img/photo-ex.jpg')})"></div>
+                                                        </div>
+                                                        <div class="product-photos__item product-photos__item_size_s">
+                                                            <div class="product-photos__image" style="background-image: url(${require('./common.blocks/product-photos/img/photo-ex.jpg')})"></div>
+                                                        </div>
+                                                        <div class="product-photos__item product-photos__item_size_s">
+                                                            <div class="product-photos__image" style="background-image: url(${require('./common.blocks/product-photos/img/photo-ex.jpg')})"></div>
+                                                        </div>
+                                                        <div class="product-photos__item product-photos__item_size_s">
+                                                            <div class="product-photos__image" style="background-image: url(${require('./common.blocks/product-photos/img/photo-ex.jpg')})"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div data-tab-order="3" class="product-tabs__layer">
+                                                <div class="product-tabs__layer-frame">
+                                                    <div class="color-palette color-palette_full_image">
+                                                        <div class="color-palette__item color-palette__item_full_size">
+                                                            <div class="color-palette__image" style="background-image: url(${require('./common.blocks/color-palette/img/palette-ex.jpg')})"></div>
+                                                            <div class="color-palette__name">
+                                                                Кристалл
+                                                            </div>
+                                                        </div>
+                                                        <div class="color-palette__item color-palette__item_full_size">
+                                                            <div class="color-palette__image" style="background-image: url(${require('./common.blocks/color-palette/img/palette-ex.jpg')})"></div>
+                                                            <div class="color-palette__name">
+                                                                Кристалл
+                                                            </div>
+                                                        </div>
+                                                        <div class="color-palette__item color-palette__item_full_size">
+                                                            <div class="color-palette__image" style="background-image: url(${require('./common.blocks/color-palette/img/palette-ex.jpg')})"></div>
+                                                            <div class="color-palette__name">
+                                                                Кристалл
+                                                            </div>
+                                                        </div>
+                                                        <div class="color-palette__item color-palette__item_full_size">
+                                                            <div class="color-palette__image" style="background-image: url(${require('./common.blocks/color-palette/img/palette-ex.jpg')})"></div>
+                                                            <div class="color-palette__name">
+                                                                Кристалл лазурный гавань
+                                                            </div>
+                                                        </div>
+                                                        <div class="color-palette__item color-palette__item_full_size">
+                                                            <div class="color-palette__image" style="background-image: url(${require('./common.blocks/color-palette/img/palette-ex.jpg')})"></div>
+                                                            <div class="color-palette__name">
+                                                                Кристалл
+                                                            </div>
+                                                        </div>
+                                                        <div class="color-palette__item color-palette__item_full_size">
+                                                            <div class="color-palette__image" style="background-image: url(${require('./common.blocks/color-palette/img/palette-ex.jpg')})"></div>
+                                                            <div class="color-palette__name">
+                                                                Кристалл
+                                                            </div>
+                                                        </div>
+                                                        <div class="color-palette__item color-palette__item_full_size">
+                                                            <div class="color-palette__image" style="background-image: url(${require('./common.blocks/color-palette/img/palette-ex.jpg')})"></div>
+                                                            <div class="color-palette__name">
+                                                                Кристалл
+                                                            </div>
+                                                        </div>
+                                                        <div class="color-palette__item color-palette__item_full_size">
+                                                            <div class="color-palette__image" style="background-image: url(${require('./common.blocks/color-palette/img/palette-ex.jpg')})"></div>
+                                                            <div class="color-palette__name">
+                                                                Кристалл
+                                                            </div>
+                                                        </div>
+                                                        <div class="color-palette__item color-palette__item_full_size">
+                                                            <div class="color-palette__image" style="background-image: url(${require('./common.blocks/color-palette/img/palette-ex.jpg')})"></div>
+                                                            <div class="color-palette__name">
+                                                                Кристалл
+                                                            </div>
+                                                        </div>
+                                                        <div class="color-palette__item color-palette__item_full_size">
+                                                            <div class="color-palette__image" style="background-image: url(${require('./common.blocks/color-palette/img/palette-ex.jpg')})"></div>
+                                                            <div class="color-palette__name">
+                                                                Кристалл
+                                                            </div>
+                                                        </div>
+                                                        <div class="color-palette__item color-palette__item_full_size">
+                                                            <div class="color-palette__image" style="background-image: url(${require('./common.blocks/color-palette/img/palette-ex.jpg')})"></div>
+                                                            <div class="color-palette__name">
+                                                                Кристалл
+                                                            </div>
+                                                        </div>
+                                                        <div class="color-palette__item color-palette__item_full_size">
+                                                            <div class="color-palette__image" style="background-image: url(${require('./common.blocks/color-palette/img/palette-ex.jpg')})"></div>
+                                                            <div class="color-palette__name">
+                                                                Кристалл
+                                                            </div>
+                                                        </div>
+                                                        <div class="color-palette__item color-palette__item_full_size">
+                                                            <div class="color-palette__image" style="background-image: url(${require('./common.blocks/color-palette/img/palette-ex.jpg')})"></div>
+                                                            <div class="color-palette__name">
+                                                                Кристалл
+                                                            </div>
+                                                        </div>
+                                                        <div class="color-palette__item color-palette__item_full_size">
+                                                            <div class="color-palette__image" style="background-image: url(${require('./common.blocks/color-palette/img/palette-ex.jpg')})"></div>
+                                                            <div class="color-palette__name">
+                                                                Кристалл
+                                                            </div>
+                                                        </div>
+                                                        <div class="color-palette__item color-palette__item_full_size">
+                                                            <div class="color-palette__image" style="background-image: url(${require('./common.blocks/color-palette/img/palette-ex.jpg')})"></div>
+                                                            <div class="color-palette__name">
+                                                                Кристалл
+                                                            </div>
+                                                        </div>
+                                                        <div class="color-palette__item color-palette__item_full_size">
+                                                            <div class="color-palette__image" style="background-image: url(${require('./common.blocks/color-palette/img/palette-ex.jpg')})"></div>
+                                                            <div class="color-palette__name">
+                                                                Кристалл
+                                                            </div>
+                                                        </div>
+                                                        <div class="color-palette__item color-palette__item_full_size">
+                                                            <div class="color-palette__image" style="background-image: url(${require('./common.blocks/color-palette/img/palette-ex.jpg')})"></div>
+                                                            <div class="color-palette__name">
+                                                                Кристалл
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div data-tab-order="4" class="product-tabs__layer  is-active">
+                                                <div class="product-tabs__layer-frame">
+                                                    <div class="variable-options">
+                                                        <div class="variable-options__text">
+                                                            <div class="product-description">
+                                                                <div class="product-description__content">
+                                                                    Адресован тем, для кого размер имеет значение.
+                                                                    Внушительный по размеру бассейн станет гордостью Вашей семьи.
+                                                                    Спортивная плавательная дорожка позволит полноценно заниматься спортом. Э
+                                                                    ргономичный подводный диван — прекрасное место для загара, гидромассажа и наслаждения в воде.
+                                                                    Уютная зона бара с изящным коктейльным столиком — незаменимая опция для
+                                                                     истинного отдыха жарким летом. Эти удобные дополнительные опции создают
+                                                                    гармонию спортивного и многофункционального бассейна.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="variable-options__content">
+                                                            <div class="variable-options__accordion">
+                                                                <div class="accordion">
+                                                                    <div class="accordion__frame">
+                                                                        <div class="accordion__header">
+                                                                            <h2 class="accordion__title title title_size_s">
+                                                                                «Тессера»
+                                                                            </h2>
+                                                                            <svg class="accordion__arrow">
+                                                                                <use xlink:href="#arrow-down"></use>
+                                                                            </svg>
+                                                                        </div>
+                                                                        <div class="accordion__body">
+                                                                            <div class="product-variable">
+                                                                                <div class="product-variable__frame">
+                                                                                    <div class="product-variable__left-side">
+                                                                                        <ul class="product-variable__list">
+                                                                                            <li class="product-variable__list-item">
+                                                                                                Марка 350
+                                                                                            </li>
+                                                                                            <li class="product-variable__list-item">
+                                                                                                Армирован фибрином
+                                                                                            </li>
+                                                                                            <li class="product-variable__list-item">
+                                                                                                Не требует покрытия гидрофобизатором
+                                                                                            </li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                    <div class="product-variable__right-side">
+                                                                                        <div class="product-variable__row">
+                                                                                            <span class="product-variable__description">
+                                                                                            Даже самая сложная конфигурация бассейнов
+                                                                                            не станет препятствием для технологии,
+                                                                                            разработанной конструкторским отделом FRANMER.
+                                                                                            Универсальный бордюрный камень подойдет для абсолютно
+                                                                                            любой геометрии чаши. Особенность этого камня в том, что
+                                                                                            он идеально повторит все изгибы бассейна. Благодаря точным расчетам и
+                                                                                            наличию разных форм, камень повторяет плавные линии и острые углы даже
+                                                                                            самой необычной чаши.
+                                                                                        </span>
+                                                                                        </div>
+                                                                                        <div class="product-variable__row">
+                                                                                            <div class="product-variable__gallery">
+                                                                                                <div class="product-photos">
+                                                                                                    <div class="product-photos__item product-photos__item_size_m">
+                                                                                                        <div class="product-photos__image" style="background-image: url(${require('./common.blocks/product-photos/img/photo-ex.jpg')})"></div>
+                                                                                                    </div>
+                                                                                                    <div class="product-photos__item product-photos__item_size_m">
+                                                                                                        <div class="product-photos__image" style="background-image: url(${require('./common.blocks/product-photos/img/photo-ex.jpg')})"></div>
+                                                                                                    </div>
+                                                                                                    <div class="product-photos__item product-photos__item_size_m">
+                                                                                                        <div class="product-photos__image" style="background-image: url(${require('./common.blocks/product-photos/img/photo-ex.jpg')})"></div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="product-variable__row">
+                                                                                            <div class="product-variable__palette">
+                                                                                                <div class="color-palette color-palette_contain_image">
+                                                                                                    <div class="color-palette__item color-palette__item_contain_size">
+                                                                                                        <div class="color-palette__image" style="background-image: url(${require('./common.blocks/color-palette/img/biskvit.png')})"></div>
+                                                                                                        <div class="color-palette__name">
+                                                                                                            Бисквит
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="color-palette__item color-palette__item_contain_size">
+                                                                                                        <div class="color-palette__image" style="background-image: url(${require('./common.blocks/color-palette/img/biskvit.png')})"></div>
+                                                                                                        <div class="color-palette__name">
+                                                                                                            Бисквит
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="color-palette__item color-palette__item_contain_size">
+                                                                                                        <div class="color-palette__image" style="background-image: url(${require('./common.blocks/color-palette/img/biskvit.png')})"></div>
+                                                                                                        <div class="color-palette__name">
+                                                                                                            Бисквит
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="color-palette__item color-palette__item_contain_size">
+                                                                                                        <div class="color-palette__image" style="background-image: url(${require('./common.blocks/color-palette/img/biskvit.png')})"></div>
+                                                                                                        <div class="color-palette__name">
+                                                                                                            Бисквит лазурный гавань
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="color-palette__item color-palette__item_contain_size">
+                                                                                                        <div class="color-palette__image" style="background-image: url(${require('./common.blocks/color-palette/img/biskvit.png')})"></div>
+                                                                                                        <div class="color-palette__name">
+                                                                                                            Бисквит
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="color-palette__item color-palette__item_contain_size">
+                                                                                                        <div class="color-palette__image" style="background-image: url(${require('./common.blocks/color-palette/img/biskvit.png')})"></div>
+                                                                                                        <div class="color-palette__name">
+                                                                                                            Бисквит
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="color-palette__item color-palette__item_contain_size">
+                                                                                                        <div class="color-palette__image" style="background-image: url(${require('./common.blocks/color-palette/img/biskvit.png')})"></div>
+                                                                                                        <div class="color-palette__name">
+                                                                                                            Бисквит
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="color-palette__item color-palette__item_contain_size">
+                                                                                                        <div class="color-palette__image" style="background-image: url(${require('./common.blocks/color-palette/img/biskvit.png')})"></div>
+                                                                                                        <div class="color-palette__name">
+                                                                                                            Бисквит
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="color-palette__item color-palette__item_contain_size">
+                                                                                                        <div class="color-palette__image" style="background-image: url(${require('./common.blocks/color-palette/img/biskvit.png')})"></div>
+                                                                                                        <div class="color-palette__name">
+                                                                                                            Бисквит
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="color-palette__item color-palette__item_contain_size">
+                                                                                                        <div class="color-palette__image" style="background-image: url(${require('./common.blocks/color-palette/img/biskvit.png')})"></div>
+                                                                                                        <div class="color-palette__name">
+                                                                                                            Бисквит
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="color-palette__item color-palette__item_contain_size">
+                                                                                                        <div class="color-palette__image" style="background-image: url(${require('./common.blocks/color-palette/img/biskvit.png')})"></div>
+                                                                                                        <div class="color-palette__name">
+                                                                                                            Бисквит
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="color-palette__item color-palette__item_contain_size">
+                                                                                                        <div class="color-palette__image" style="background-image: url(${require('./common.blocks/color-palette/img/biskvit.png')})"></div>
+                                                                                                        <div class="color-palette__name">
+                                                                                                            Бисквит
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="color-palette__item color-palette__item_contain_size">
+                                                                                                        <div class="color-palette__image" style="background-image: url(${require('./common.blocks/color-palette/img/biskvit.png')})"></div>
+                                                                                                        <div class="color-palette__name">
+                                                                                                            Бисквит
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="color-palette__item color-palette__item_contain_size">
+                                                                                                        <div class="color-palette__image" style="background-image: url(${require('./common.blocks/color-palette/img/biskvit.png')})"></div>
+                                                                                                        <div class="color-palette__name">
+                                                                                                            Бисквит
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="color-palette__item color-palette__item_contain_size">
+                                                                                                        <div class="color-palette__image" style="background-image: url(${require('./common.blocks/color-palette/img/biskvit.png')})"></div>
+                                                                                                        <div class="color-palette__name">
+                                                                                                            Бисквит
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="color-palette__item color-palette__item_contain_size">
+                                                                                                        <div class="color-palette__image" style="background-image: url(${require('./common.blocks/color-palette/img/biskvit.png')})"></div>
+                                                                                                        <div class="color-palette__name">
+                                                                                                            Бисквит
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="color-palette__item color-palette__item_contain_size">
+                                                                                                        <div class="color-palette__image" style="background-image: url(${require('./common.blocks/color-palette/img/biskvit.png')})"></div>
+                                                                                                        <div class="color-palette__name">
+                                                                                                            Бисквит
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="product-variable__row product-variable__row_indent_top">
+                                                                                            <div class="product-variable__view">
+                                                                                                <iframe class="product-variable__video" src="https://www.youtube.com/embed/kdBG9dCjY40" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="variable-options__accordion">
+                                                                <div class="accordion is-open">
+                                                                    <div class="accordion__frame">
+                                                                        <div class="accordion__header">
+                                                                            <h2 class="accordion__title title title_size_s">
+                                                                                «Тессера»
+                                                                            </h2>
+                                                                            <svg class="accordion__arrow">
+                                                                                <use xlink:href="#arrow-down"></use>
+                                                                            </svg>
+                                                                        </div>
+                                                                        <div class="accordion__body">
+                                                                            <div class="product-variable">
+                                                                                <div class="product-variable__frame">
+                                                                                    <div class="product-variable__left-side">
+                                                                                        <ul class="product-variable__list">
+                                                                                            <li class="product-variable__list-item">
+                                                                                                Марка 350
+                                                                                            </li>
+                                                                                            <li class="product-variable__list-item">
+                                                                                                Армирован фибрином
+                                                                                            </li>
+                                                                                            <li class="product-variable__list-item">
+                                                                                                Не требует покрытия гидрофобизатором
+                                                                                            </li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                    <div class="product-variable__right-side">
+                                                                                        <div class="product-variable__row">
+                                                                                            <span class="product-variable__description">
+                                                                                            Даже самая сложная конфигурация бассейнов
+                                                                                            не станет препятствием для технологии,
+                                                                                            разработанной конструкторским отделом FRANMER.
+                                                                                            Универсальный бордюрный камень подойдет для абсолютно
+                                                                                            любой геометрии чаши. Особенность этого камня в том, что
+                                                                                            он идеально повторит все изгибы бассейна. Благодаря точным расчетам и
+                                                                                            наличию разных форм, камень повторяет плавные линии и острые углы даже
+                                                                                            самой необычной чаши.
+                                                                                        </span>
+                                                                                        </div>
+                                                                                        <div class="product-variable__row">
+                                                                                            <div class="product-variable__gallery">
+                                                                                                <div class="product-photos">
+                                                                                                    <div class="product-photos__item product-photos__item_size_m">
+                                                                                                        <div class="product-photos__image" style="background-image: url(${require('./common.blocks/product-photos/img/photo-ex.jpg')})"></div>
+                                                                                                    </div>
+                                                                                                    <div class="product-photos__item product-photos__item_size_m">
+                                                                                                        <div class="product-photos__image" style="background-image: url(${require('./common.blocks/product-photos/img/photo-ex.jpg')})"></div>
+                                                                                                    </div>
+                                                                                                    <div class="product-photos__item product-photos__item_size_m">
+                                                                                                        <div class="product-photos__image" style="background-image: url(${require('./common.blocks/product-photos/img/photo-ex.jpg')})"></div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="product-variable__row">
+                                                                                            <div class="product-variable__palette">
+                                                                                                <div class="color-palette color-palette_contain_image">
+                                                                                                    <div class="color-palette__item color-palette__item_contain_size">
+                                                                                                        <div class="color-palette__image" style="background-image: url(${require('./common.blocks/color-palette/img/biskvit.png')})"></div>
+                                                                                                        <div class="color-palette__name">
+                                                                                                            Бисквит
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="color-palette__item color-palette__item_contain_size">
+                                                                                                        <div class="color-palette__image" style="background-image: url(${require('./common.blocks/color-palette/img/biskvit.png')})"></div>
+                                                                                                        <div class="color-palette__name">
+                                                                                                            Бисквит
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="color-palette__item color-palette__item_contain_size">
+                                                                                                        <div class="color-palette__image" style="background-image: url(${require('./common.blocks/color-palette/img/biskvit.png')})"></div>
+                                                                                                        <div class="color-palette__name">
+                                                                                                            Бисквит
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="color-palette__item color-palette__item_contain_size">
+                                                                                                        <div class="color-palette__image" style="background-image: url(${require('./common.blocks/color-palette/img/biskvit.png')})"></div>
+                                                                                                        <div class="color-palette__name">
+                                                                                                            Бисквит лазурный гавань
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="color-palette__item color-palette__item_contain_size">
+                                                                                                        <div class="color-palette__image" style="background-image: url(${require('./common.blocks/color-palette/img/biskvit.png')})"></div>
+                                                                                                        <div class="color-palette__name">
+                                                                                                            Бисквит
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="color-palette__item color-palette__item_contain_size">
+                                                                                                        <div class="color-palette__image" style="background-image: url(${require('./common.blocks/color-palette/img/biskvit.png')})"></div>
+                                                                                                        <div class="color-palette__name">
+                                                                                                            Бисквит
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="color-palette__item color-palette__item_contain_size">
+                                                                                                        <div class="color-palette__image" style="background-image: url(${require('./common.blocks/color-palette/img/biskvit.png')})"></div>
+                                                                                                        <div class="color-palette__name">
+                                                                                                            Бисквит
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="color-palette__item color-palette__item_contain_size">
+                                                                                                        <div class="color-palette__image" style="background-image: url(${require('./common.blocks/color-palette/img/biskvit.png')})"></div>
+                                                                                                        <div class="color-palette__name">
+                                                                                                            Бисквит
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="color-palette__item color-palette__item_contain_size">
+                                                                                                        <div class="color-palette__image" style="background-image: url(${require('./common.blocks/color-palette/img/biskvit.png')})"></div>
+                                                                                                        <div class="color-palette__name">
+                                                                                                            Бисквит
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="color-palette__item color-palette__item_contain_size">
+                                                                                                        <div class="color-palette__image" style="background-image: url(${require('./common.blocks/color-palette/img/biskvit.png')})"></div>
+                                                                                                        <div class="color-palette__name">
+                                                                                                            Бисквит
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="color-palette__item color-palette__item_contain_size">
+                                                                                                        <div class="color-palette__image" style="background-image: url(${require('./common.blocks/color-palette/img/biskvit.png')})"></div>
+                                                                                                        <div class="color-palette__name">
+                                                                                                            Бисквит
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="color-palette__item color-palette__item_contain_size">
+                                                                                                        <div class="color-palette__image" style="background-image: url(${require('./common.blocks/color-palette/img/biskvit.png')})"></div>
+                                                                                                        <div class="color-palette__name">
+                                                                                                            Бисквит
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="color-palette__item color-palette__item_contain_size">
+                                                                                                        <div class="color-palette__image" style="background-image: url(${require('./common.blocks/color-palette/img/biskvit.png')})"></div>
+                                                                                                        <div class="color-palette__name">
+                                                                                                            Бисквит
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="color-palette__item color-palette__item_contain_size">
+                                                                                                        <div class="color-palette__image" style="background-image: url(${require('./common.blocks/color-palette/img/biskvit.png')})"></div>
+                                                                                                        <div class="color-palette__name">
+                                                                                                            Бисквит
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="color-palette__item color-palette__item_contain_size">
+                                                                                                        <div class="color-palette__image" style="background-image: url(${require('./common.blocks/color-palette/img/biskvit.png')})"></div>
+                                                                                                        <div class="color-palette__name">
+                                                                                                            Бисквит
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="color-palette__item color-palette__item_contain_size">
+                                                                                                        <div class="color-palette__image" style="background-image: url(${require('./common.blocks/color-palette/img/biskvit.png')})"></div>
+                                                                                                        <div class="color-palette__name">
+                                                                                                            Бисквит
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="color-palette__item color-palette__item_contain_size">
+                                                                                                        <div class="color-palette__image" style="background-image: url(${require('./common.blocks/color-palette/img/biskvit.png')})"></div>
+                                                                                                        <div class="color-palette__name">
+                                                                                                            Бисквит
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="product-variable__row product-variable__row_indent_top">
+                                                                                            <div class="product-variable__view">
+                                                                                                <iframe class="product-variable__video" src="https://www.youtube.com/embed/kdBG9dCjY40" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div data-tab-order="5" class="product-tabs__layer">
+                                                <div class="product-tabs__layer-frame">
+                                                    <div class="product-options">
+                                                        <div class="product-options__item">
+                                                            <h4 class="product-options__title">
+                                                                Встроенные:
+                                                            </h4>
+                                                            <ul class="product-options__list">
+                                                                <li class="product-options__list-item">
+                                                                    Лестница
+                                                                </li>
+                                                                <li class="product-options__list-item">
+                                                                    Подводный диван
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="product-options__item">
+                                                            <h4 class="product-options__title">
+                                                                Дополнительные:
+                                                            </h4>
+                                                            <ul class="product-options__list">
+                                                                <li class="product-options__list-item">
+                                                                    Лестница
+                                                                </li>
+                                                                <li class="product-options__list-item">
+                                                                    Энергосберегающее покрытие
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div data-tab-order="6" class="product-tabs__layer">
+                                                <div class="product-tabs__layer-frame">
+                                                    <div class="product-tabs__add-products">
+                                                        <div class="product-tabs__additional-item">
+                                                            <a href="#" class="additional-product">
+                                                                <div class="additional-product__frame">
+                                                                    <div class="additional-product__image" style="background-image: url(${require('./common.blocks/additional-product/img/additional-ex.jpg')})"></div>
+                                                                    <div class="additional-product__label">
+                                                                        <div class="additional-product__promo additional-product__promo_color_blue">
+                                                                            Скидка 5%
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="additional-product__info">
+                                                                        <span class="additional-product__name">
+                                                                            Насос 4 м.куб./ч., 0,35 кВт, 220 В, Aquatechnix Aqua Plus 4
+                                                                        </span>
+                                                                        <span class="additional-product__country">
+                                                                            Германия
+                                                                        </span>
+                                                                        <span class="additional-product__price">
+                                                                            1414 706 ₽
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="product-tabs__additional-item">
+                                                            <a href="#" class="additional-product">
+                                                                <div class="additional-product__frame">
+                                                                    <div class="additional-product__image" style="background-image: url(${require('./common.blocks/additional-product/img/additional-ex.jpg')})"></div>
+                                                                    <div class="additional-product__label">
+                                                                        <div class="additional-product__promo additional-product__promo_color_grey">
+                                                                            Нет в наличии
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="additional-product__info">
+                                                                        <span class="additional-product__name">
+                                                                            Насос 7 м3/ч., 220 В, Kripsol Ondina ОK-33
+                                                                        </span>
+                                                                        <span class="additional-product__country">
+                                                                            Германия
+                                                                        </span>
+                                                                        <span class="additional-product__price">
+                                                                            1414 706 ₽
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="product-tabs__additional-item">
+                                                            <a href="#" class="additional-product">
+                                                                <div class="additional-product__frame">
+                                                                    <div class="additional-product__image" style="background-image: url(${require('./common.blocks/additional-product/img/additional-ex.jpg')})"></div>
+                                                                    <div class="additional-product__label">
+                                                                        <div class="additional-product__promo additional-product__promo_color_grey">
+                                                                            Нет в наличии
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="additional-product__info">
+                                                                        <span class="additional-product__name">
+                                                                            Насос 7 м3/ч., 220 В, Kripsol Ondina ОK-33
+                                                                        </span>
+                                                                        <span class="additional-product__country">
+                                                                            Германия
+                                                                        </span>
+                                                                        <span class="additional-product__price">
+                                                                            1414 706 ₽
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="product-tabs__additional-item">
+                                                            <a href="#" class="additional-product">
+                                                                <div class="additional-product__frame">
+                                                                    <div class="additional-product__image" style="background-image: url(${require('./common.blocks/additional-product/img/additional-ex.jpg')})"></div>
+                                                                    <div class="additional-product__label">
+                                                                        <div class="additional-product__promo additional-product__promo_color_grey">
+                                                                            Нет в наличии
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="additional-product__info">
+                                                                        <span class="additional-product__name">
+                                                                            Насос 7 м3/ч., 220 В, Kripsol Ondina ОK-33
+                                                                        </span>
+                                                                        <span class="additional-product__country">
+                                                                            Германия
+                                                                        </span>
+                                                                        <span class="additional-product__price">
+                                                                            1414 706 ₽
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div data-tab-order="7" class="product-tabs__layer">
+                                                <div class="product-tabs__layer-frame">
+                                                    <div class="product-delivery">
+                                                        <div class="product-delivery__text">
+                                                            <div class="product-description">
+                                                                <div class="product-description__content">
+                                                                    Доставка - один из этапов нашей работы. FRANMER имеет целый автопарк спецплатформ с регулируемым клиренсом, что позволяет перевозить бассейны без малейших повреждений.
+                                                                    Конструкторское бюро FRANMER разработало уникальный прицеп, позволяющий перевозить негабаритные бассейны, оставаясь в габаритах ГИБДД. Благодаря этому ноу-хау перевозка бассейнов по-прежнему не требует дополнительных затрат на сопровождение ГИБДД.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="product-delivery__gallery">
+                                                            <div class="product-delivery__image">
+                                                                <img src="./common.blocks/product-delivery/img/delivery-ex.jpg" alt="Delivery-ex" class="product-delivery__picture">
+                                                            </div>
+                                                            <div class="product-delivery__image">
+                                                                <img src="./common.blocks/product-delivery/img/delivery-ex.jpg" alt="Delivery-ex" class="product-delivery__picture">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+
+<footer class="footer">
+    <div class="footer__top">
+        <div class="container">
+            <div class="footer__container">
+                <div class="footer__left-side">
+                    <div class="footer__logo">
+                        <a href="/" class="footer__link">
+                            <img src="./common.blocks/logo/img/logo-white.png" alt="Logo-image" class="footer__image">
+                        </a>
+                    </div>
+                    <div class="footer__contacts">
+                        <svg class="footer__icon">
+                            <use xlink:href="#phone"></use>
+                        </svg>
+                        <a href="tel:+78412258065" class="footer__number">
+                            +7 (8412) 25 80 65
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__right-side">
+                            <span class="footer__description">
+                                Одним из приоритетных направлений деятельности компании является установка
+                                композитных бассейнов. Мы представляем вниманию наших клиентов широкий модельный
+                                ряд изделий такого вида. Они изготавливаются из современного сверхпрочного материала,
+                                который, как правило, используется в тех сферах, где необходима стойкость к высоким
+                                нагрузкам, например, в производстве яхт и самолетов.
+                            </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <div class="container">
+            <div class="footer__wrapper">
+                        <span class="footer__caption">
+                            PoolVIP – установка бассейнов и оборудования, 2020
+                        </span>
+                <div class="footer__prod">
+                    <a href="#" class="footer__bees">
+                        Сделано в OnlineBees
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="popup mobile-menu">
+    <div class="mobile-menu__frame">
+        <div class="mobile-menu__top">
+            <div class="mobile-menu__cancel">
+                <svg class="mobile-menu__cancel-icon">
+                    <use xlink:href="#close"></use>
+                </svg>
+            </div>
+        </div>
+        <div class="mobile-menu__body">
+            <ul class="mobile-menu__categories">
+                <li class="mobile-menu__category">
+                    <a href="#" class="mobile-menu__category-link">
+                        Композитные бассейны
+                    </a>
+                </li>
+                <li class="mobile-menu__category">
+                    <a href="#" class="mobile-menu__category-link">
+                        Бетонные бассейны
+                    </a>
+                </li>
+                <li class="mobile-menu__category">
+                    <a href="#" class="mobile-menu__category-link">
+                        Купели
+                    </a>
+                </li>
+                <li class="mobile-menu__category">
+                    <a href="#" class="mobile-menu__category-link">
+                        Павильоны
+                    </a>
+                </li>
+                <li class="mobile-menu__category">
+                    <a href="#" class="mobile-menu__category-link">
+                        Материалы для отделки
+                    </a>
+                </li>
+                <li class="mobile-menu__category">
+                    <a href="#" class="mobile-menu__category-link">
+                        Оборудование
+                    </a>
+                </li>
+                <li class="mobile-menu__category">
+                    <a href="#" class="mobile-menu__category-link">
+                        Химия
+                    </a>
+                </li>
+            </ul>
+            <ul class="mobile-menu__navigation">
+                <li class="mobile-menu__nav-item">
+                    <a href="#" class="mobile-menu__nav-link">
+                        О компании
+                    </a>
+                </li>
+                <li class="mobile-menu__nav-item">
+                    <a href="#" class="mobile-menu__nav-link">
+                        Каталог
+                    </a>
+                </li>
+                <li class="mobile-menu__nav-item">
+                    <a href="#" class="mobile-menu__nav-link">
+                        Наши работы
+                    </a>
+                </li>
+                <li class="mobile-menu__nav-item">
+                    <a href="#" class="mobile-menu__nav-link">
+                        Контакты
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile-menu__footer">
+            <div class="mobile-menu__contact">
+                <div class="header-contact">
+                    <svg class="header-contact__icon">
+                        <use xlink:href="#phone"></use>
+                    </svg>
+                    <a href="tel:+78412258065" class="header-contact__link">
+                        +7 (8412) 25 80 65
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="popup popup-feedback">
+    <div class="popup-feedback__frame">
+        <div class="popup-feedback__top">
+            <div class="popup-feedback__cancel">
+                <svg class="popup-feedback__cancel-icon">
+                    <use xlink:href="#close"></use>
+                </svg>
+            </div>
+        </div>
+        <div class="popup-feedback__body">
+            <form action="" class="popup-feedback__form">
+                <div class="popup-feedback__forms">
+                    <div class="popup-feedback__form-group">
+                        <div class="popup-feedback__from-name">
+                            Как вас зовут?
+                        </div>
+                        <input type="text" placeholder="Имя" class="popup-feedback__field">
+                    </div>
+                    <div class="popup-feedback__form-group">
+                        <div class="popup-feedback__from-name">
+                            Электронная почта
+                        </div>
+                        <input type="email" placeholder="Имя" class="popup-feedback__field">
+                    </div>
+                    <div class="popup-feedback__form-group">
+                        <div class="popup-feedback__from-name">
+                            Телефон
+                        </div>
+                        <input type="number" placeholder="Имя" class="popup-feedback__field">
+                    </div>
+                </div>
+                <div class="popup-feedback__check-item">
+                    <div class="popup-feedback__checkbox">
+                        <label class="custom-check custom-check_red">
+                            <input type="checkbox" class="custom-check__default-input">
+                            <span class="custom-check__new-checkbox">
+                                <svg class="feedback-modal__checkmark-icon">
+                                    <use xlink:href="#checkmark"></use>
+                                </svg>
+                            </span>
+                        </label>
+                    </div>
+                    <div class="popup-feedback__check-caption">
+                        Я соглашаюсь на обработку и хранение персональных данных
+                    </div>
+                </div>
+                <div class="popup-feedback__captcha">
+
+                </div>
+                <div class="popup-feedback__submit">
+                    <button type="submit" class="button button_size_m button_color_blue">
+                        Отправить
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="js-overlay overlay page-overlay"></div>
+</body>
+
+</html>
+
+

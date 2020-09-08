@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pools</title>
+    <meta name="theme-color" content="#ffffff">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body class="body">
+
+<header class="header">
+    <div class="container">
+        <div class="header__frame">
+            <div class="header__top">
+                <div class="header__back-button">
+                    <a href="/" class="header__back-link">
+                        <svg class="header__back-icon">
+                            <use xlink:href="#arrow-left-long"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="header__left-side">
+                    <div class="header__logo">
+                        <div class="logo">
+                            <a href="/" class="logo__icon">
+                                <img src="./common.blocks/logo/img/logo-image.png" alt="Logo-image" class="logo__image">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header__links">
+                        <div class="header-links">
+                            <div class="header-links__frame">
+                                <div class="header-links__item">
+                                    <a href="#" class="header-links__link">
+                                        О компании
+                                    </a>
+                                </div>
+                                <div class="header-links__item">
+                                    <a href="catalog.html" class="header-links__link">
+                                        Каталог
+                                    </a>
+                                </div>
+                                <div class="header-links__item">
+                                    <a href="#" class="header-links__link">
+                                        Наши работы
+                                    </a>
+                                </div>
+                                <div class="header-links__item">
+                                    <a href="#" class="header-links__link">
+                                        Контакты
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__right-side">
+                    <div class="header__contact">
+                        <div class="header-contact">
+                            <svg class="header-contact__icon">
+                                <use xlink:href="#phone"></use>
+                            </svg>
+                            <a href="tel:+78412258065" class="header-contact__link">
+                                +7 (8412) 25 80 65
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header__feedback">
+                        <button class="js-feedback__button button button_size_s button_color_white">
+                            <svg class="button__icon">
+                                <use xlink:href="#alarm"></use>
+                            </svg>
+                            <span class="button__caption">
+                                        Позвоните мне
+                                    </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="header__menu-burger">
+                    <div class="menu-burger">
+                        <div class="menu-burger__inner">
+                            <div class="menu-burger__line"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__bottom">
+                <nav class="site-nav">
+                    <div class="site-nav__frame">
+                        <div class="site-nav__item">
+                            <a href="#" class="site-nav__link">
+                                Композитные бассейны
+                            </a>
+                        </div>
+                        <div class="site-nav__item">
+                            <a href="#" class="site-nav__link">
+                                Бетонные бассейны
+                            </a>
+                        </div>
+                        <div class="site-nav__item">
+                            <a href="#" class="site-nav__link">
+                                Купели
+                            </a>
+                        </div>
+                        <div class="site-nav__item">
+                            <a href="#" class="site-nav__link">
+                                Материалы для отделки
+                            </a>
+                        </div>
+                        <div class="site-nav__item">
+                            <a href="#" class="site-nav__link">
+                                Оборудование
+                            </a>
+                        </div>
+                        <div class="site-nav__item">
+                            <a href="#" class="site-nav__link">
+                                Химия для бассейнов
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="page-inner page-inner_content_m">
+    <main class="main">
+        <div class="page-content">
+            <div class="page-content__breadcrumbs container">
+                <div class="breadcrumbs-wrapper">
+                    <ol class="breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                            <a class="breadcrumbs__link" href="/" itemprop="item">
+                                <span itemprop="name">Главная страница</span>
+                            </a>
+                            <meta itemprop="position" content="0" />
+                            <svg class="breadcrumbs__arrow" focusable="false">
+                                <use xlink:href="#arrow-right"></use>
+                            </svg>
+                        </li>
+                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                            <a class="breadcrumbs__link" href="catalog.html" itemprop="item">
+                                <span itemprop="name">Каталог</span>
+                            </a>
+                            <meta itemprop="position" content="1" />
+                            <svg class="breadcrumbs__arrow" focusable="false">
+                                <use xlink:href="#arrow-right"></use>
+                            </svg>
+                        </li>
+                        <li class="breadcrumbs__item is-active" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                            <span class="breadcrumbs__link" itemprop="item">
+                                <span itemprop="name">Наши работы</span>
+                            </span>
+                            <meta itemprop="position" content="2" />
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="page-content__wrapper">
+                <div class="container">
+                    <h1 class="page-content__title title title_size_xl">
+                        Наши работы
+                    </h1>
+                    <div class="page-content__inner">
+                        <div class="works-grid">
+                            <div class="works-grid__frame">
+                                <div class="works-grid__item">
+                                    <a href="#" class="work-card">
+                                        <div class="work-card__frame" style="background-image: url(${require('./common.blocks/work-card/img/work-ex.jpg')})">
+                                            <div class="work-card__information">
+                                                <div class="work-card__wrapper">
+                                                    <div class="work-card__overlay"></div>
+                                                    <div class="work-card__content">
+                                                        <h3 class="work-card__title">
+                                                            Реставрация открытого бассейна в Ахунах
+                                                        </h3>
+                                                        <div class="work-card__address">
+                                                            <svg class="work-card__pointer icon icon_size_s icon_color_white">
+                                                                <use xlink:href="#marker"></use>
+                                                            </svg>
+                                                            <span class="work-card__caption">
+                                                                                Пенза, мкр. Терновка
+                                                                            </span>
+                                                        </div>
+                                                        <div class="work-card__date">
+                                                                        <span class="work-card__date-info">
+                                                                            июнь-июль 2019
+                                                                        </span>
+                                                            <svg class="work-card__arrow">
+                                                                <use xlink:href="#arrow-right-long"></use>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="works-grid__item">
+                                    <a href="#" class="work-card">
+                                        <div class="work-card__frame" style="background-image: url(${require('./common.blocks/work-card/img/work-ex.jpg')})">
+                                            <div class="work-card__information">
+                                                <div class="work-card__wrapper">
+                                                    <div class="work-card__overlay"></div>
+                                                    <div class="work-card__content">
+                                                        <h3 class="work-card__title">
+                                                            Реставрация открытого бассейна в Ахунах
+                                                        </h3>
+                                                        <div class="work-card__address">
+                                                            <svg class="work-card__pointer icon icon_size_s icon_color_white">
+                                                                <use xlink:href="#marker"></use>
+                                                            </svg>
+                                                            <span class="work-card__caption">
+                                                                                Пенза, мкр. Терновка
+                                                                            </span>
+                                                        </div>
+                                                        <div class="work-card__date">
+                                                                        <span class="work-card__date-info">
+                                                                            июнь-июль 2019
+                                                                        </span>
+                                                            <svg class="work-card__arrow">
+                                                                <use xlink:href="#arrow-right-long"></use>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="works-grid__item">
+                                    <a href="#" class="work-card">
+                                        <div class="work-card__frame" style="background-image: url(${require('./common.blocks/work-card/img/work-ex.jpg')})">
+                                            <div class="work-card__information">
+                                                <div class="work-card__wrapper">
+                                                    <div class="work-card__overlay"></div>
+                                                    <div class="work-card__content">
+                                                        <h3 class="work-card__title">
+                                                            Реставрация открытого бассейна в Ахунах
+                                                        </h3>
+                                                        <div class="work-card__address">
+                                                            <svg class="work-card__pointer icon icon_size_s icon_color_white">
+                                                                <use xlink:href="#marker"></use>
+                                                            </svg>
+                                                            <span class="work-card__caption">
+                                                                                Пенза, мкр. Терновка
+                                                                            </span>
+                                                        </div>
+                                                        <div class="work-card__date">
+                                                                        <span class="work-card__date-info">
+                                                                            июнь-июль 2019
+                                                                        </span>
+                                                            <svg class="work-card__arrow">
+                                                                <use xlink:href="#arrow-right-long"></use>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="works-grid__button">
+                                <button class="button button_size_m button_color_white">
+                                    Показать еще
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+
+<footer class="footer">
+    <div class="footer__top">
+        <div class="container">
+            <div class="footer__container">
+                <div class="footer__left-side">
+                    <div class="footer__logo">
+                        <a href="/" class="footer__link">
+                            <img src="./common.blocks/logo/img/logo-white.png" alt="Logo-image" class="footer__image">
+                        </a>
+                    </div>
+                    <div class="footer__contacts">
+                        <svg class="footer__icon">
+                            <use xlink:href="#phone"></use>
+                        </svg>
+                        <a href="tel:+78412258065" class="footer__number">
+                            +7 (8412) 25 80 65
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__right-side">
+                            <span class="footer__description">
+                                Одним из приоритетных направлений деятельности компании является установка
+                                композитных бассейнов. Мы представляем вниманию наших клиентов широкий модельный
+                                ряд изделий такого вида. Они изготавливаются из современного сверхпрочного материала,
+                                который, как правило, используется в тех сферах, где необходима стойкость к высоким
+                                нагрузкам, например, в производстве яхт и самолетов.
+                            </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <div class="container">
+            <div class="footer__wrapper">
+                        <span class="footer__caption">
+                            PoolVIP – установка бассейнов и оборудования, 2020
+                        </span>
+                <div class="footer__prod">
+                    <a href="#" class="footer__bees">
+                        Сделано в OnlineBees
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="popup mobile-menu">
+    <div class="mobile-menu__frame">
+        <div class="mobile-menu__top">
+            <div class="mobile-menu__cancel">
+                <svg class="mobile-menu__cancel-icon">
+                    <use xlink:href="#close"></use>
+                </svg>
+            </div>
+        </div>
+        <div class="mobile-menu__body">
+            <ul class="mobile-menu__categories">
+                <li class="mobile-menu__category">
+                    <a href="#" class="mobile-menu__category-link">
+                        Композитные бассейны
+                    </a>
+                </li>
+                <li class="mobile-menu__category">
+                    <a href="#" class="mobile-menu__category-link">
+                        Бетонные бассейны
+                    </a>
+                </li>
+                <li class="mobile-menu__category">
+                    <a href="#" class="mobile-menu__category-link">
+                        Купели
+                    </a>
+                </li>
+                <li class="mobile-menu__category">
+                    <a href="#" class="mobile-menu__category-link">
+                        Павильоны
+                    </a>
+                </li>
+                <li class="mobile-menu__category">
+                    <a href="#" class="mobile-menu__category-link">
+                        Материалы для отделки
+                    </a>
+                </li>
+                <li class="mobile-menu__category">
+                    <a href="#" class="mobile-menu__category-link">
+                        Оборудование
+                    </a>
+                </li>
+                <li class="mobile-menu__category">
+                    <a href="#" class="mobile-menu__category-link">
+                        Химия
+                    </a>
+                </li>
+            </ul>
+            <ul class="mobile-menu__navigation">
+                <li class="mobile-menu__nav-item">
+                    <a href="#" class="mobile-menu__nav-link">
+                        О компании
+                    </a>
+                </li>
+                <li class="mobile-menu__nav-item">
+                    <a href="#" class="mobile-menu__nav-link">
+                        Каталог
+                    </a>
+                </li>
+                <li class="mobile-menu__nav-item">
+                    <a href="#" class="mobile-menu__nav-link">
+                        Наши работы
+                    </a>
+                </li>
+                <li class="mobile-menu__nav-item">
+                    <a href="#" class="mobile-menu__nav-link">
+                        Контакты
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile-menu__footer">
+            <div class="mobile-menu__contact">
+                <div class="header-contact">
+                    <svg class="header-contact__icon">
+                        <use xlink:href="#phone"></use>
+                    </svg>
+                    <a href="tel:+78412258065" class="header-contact__link">
+                        +7 (8412) 25 80 65
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="popup popup-feedback">
+    <div class="popup-feedback__frame">
+        <div class="popup-feedback__top">
+            <div class="popup-feedback__cancel">
+                <svg class="popup-feedback__cancel-icon">
+                    <use xlink:href="#close"></use>
+                </svg>
+            </div>
+        </div>
+        <div class="popup-feedback__body">
+            <form action="" class="popup-feedback__form">
+                <div class="popup-feedback__forms">
+                    <div class="popup-feedback__form-group">
+                        <div class="popup-feedback__from-name">
+                            Как вас зовут?
+                        </div>
+                        <input type="text" placeholder="Имя" class="popup-feedback__field">
+                    </div>
+                    <div class="popup-feedback__form-group">
+                        <div class="popup-feedback__from-name">
+                            Электронная почта
+                        </div>
+                        <input type="email" placeholder="Имя" class="popup-feedback__field">
+                    </div>
+                    <div class="popup-feedback__form-group">
+                        <div class="popup-feedback__from-name">
+                            Телефон
+                        </div>
+                        <input type="number" placeholder="Имя" class="popup-feedback__field">
+                    </div>
+                </div>
+                <div class="popup-feedback__check-item">
+                    <div class="popup-feedback__checkbox">
+                        <label class="custom-check custom-check_red">
+                            <input type="checkbox" class="custom-check__default-input">
+                            <span class="custom-check__new-checkbox">
+                                <svg class="feedback-modal__checkmark-icon">
+                                    <use xlink:href="#checkmark"></use>
+                                </svg>
+                            </span>
+                        </label>
+                    </div>
+                    <div class="popup-feedback__check-caption">
+                        Я соглашаюсь на обработку и хранение персональных данных
+                    </div>
+                </div>
+                <div class="popup-feedback__captcha">
+
+                </div>
+                <div class="popup-feedback__submit">
+                    <button type="submit" class="button button_size_m button_color_blue">
+                        Отправить
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="js-overlay overlay page-overlay"></div>
+</body>
+
+</html>
+
+

@@ -1,0 +1,36 @@
+@import (reference) '../../less/variables.less';
+
+.custom-check__default-input {
+    display: none;
+}
+
+.custom-check__new-checkbox {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid @color-blue;
+    transition: all .2s ease;
+    position: relative;
+}
+
+.feedback-modal__checkmark-icon {
+    fill: white;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.custom-check__default-input:checked ~ .custom-check__new-checkbox {
+    border-color: @color-blue;
+    background-color: @color-blue;
+}
+
+.custom-check__default-input:checked ~ .custom-check__new-checkbox {
+    .feedback-modal__checkmark-icon {
+        opacity: 1;
+    }
+}

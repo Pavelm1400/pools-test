@@ -1,0 +1,76 @@
+@import (reference) '../../less/variables.less';
+
+.work-item {
+
+}
+
+.work-item__frame {
+    @media(min-width: @tablet-landscape) {
+        display: flex;
+    }
+}
+
+.work-item__info {
+    margin-bottom: 32px;
+    overflow: hidden;
+
+    @media(min-width: @tablet-landscape) {
+        margin-bottom: 0;
+        margin-right: 32px;
+        flex-basis: calc(100%/12 * 9);
+    }
+}
+
+.work-item__title {
+    margin-bottom: 24px;
+}
+
+.work-item__rows {
+
+}
+
+.work-item__block {
+
+    &:not(:last-child) {
+        margin-bottom: 32px;
+    }
+}
+
+.work-item__slider {
+
+    .slider-navigation {
+        display: none;
+    }
+
+    @media(min-width: @tablet-landscape) {
+        .slider-navigation {
+            display: block;
+        }
+    }
+}
+
+.work-item__image {
+    margin: 0 auto;
+    width: 288px;
+    height: 215px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media(min-width: @tablet) {
+        width: 462px;
+        height: 328px;
+    }
+
+    @media(min-width: @tablet-landscape) {
+        width: 100%;
+        height: 592px;
+    }
+}
+
+.work-item__aside {
+    @media(min-width: @tablet-landscape) {
+        flex-basis: calc(100%/12 * 3);
+        position: relative;
+    }
+}

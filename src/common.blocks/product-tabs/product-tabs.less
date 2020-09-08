@@ -1,0 +1,82 @@
+@import (reference) '../../less/variables.less';
+
+.product-tabs {
+
+}
+
+.product-tabs__frame {
+
+}
+
+.product-tabs__panel-items {
+    border-bottom: 1px solid @color-blue;
+    display: flex;
+    overflow-x: auto;
+}
+
+.product-tabs__button {
+    white-space: nowrap;
+    padding-bottom: 4px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: @transition;
+
+    &.is-active {
+        border-bottom: 2px solid @color-blue;
+        color: @color-blue;
+    }
+
+    &:not(:last-child) {
+        margin-right: 24px;
+    }
+
+    &:hover {
+        color: @color-blue;
+    }
+
+    @media(min-width: @desktop-medium) {
+        font-size: 16px;
+        line-height: 1.4;
+
+        &:not(:last-child) {
+            margin-right: 48px;
+        }
+    }
+}
+
+.product-tabs__content-items {
+
+}
+
+.product-tabs__layer {
+}
+
+.product-tabs__layer-frame {
+    padding: 24px 0 0;
+
+    @media (min-width: @desktop-medium) {
+        padding: 40px 0 0;
+    }
+}
+
+.product-tabs__add-products {
+    display: flex;
+    overflow-x: auto;
+}
+
+.product-tabs__additional-item {
+    flex: 0 0 138px;
+    &:not(:last-child) {
+        margin-right: 12px;
+    }
+
+    @media(min-width: @desktop-medium) {
+        flex: 0 0 304px;
+        &:not(:last-child) {
+            margin-right: 32px;
+        }
+    }
+}

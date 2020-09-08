@@ -1,0 +1,51 @@
+@import (reference) '../../less/variables.less';
+
+.site-nav {
+
+}
+
+.site-nav__frame {
+    display: flex;
+    align-items: center;
+    background-color: rgba(13, 121, 191, .1);
+    padding: 16px 8px;
+
+    @media(min-width: @desktop-small) {
+        padding: 24px;
+    }
+}
+
+.site-nav__item {
+
+    &:not(:last-child) {
+        margin-right: 20px;
+    }
+
+    @media(min-width: @desktop-small) {
+        &:not(:last-child) {
+            margin-right: 40px;
+        }
+    }
+}
+
+.site-nav__link {
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;
+    transition: color .2s ease;
+
+    &:hover {
+        color: @color-blue;
+    }
+
+    @media(min-width: @desktop-small) {
+        font-size: 12px;
+    }
+
+    @media(min-width:@desktop-medium) {
+        font-size: 14px;
+    }
+}
+
+

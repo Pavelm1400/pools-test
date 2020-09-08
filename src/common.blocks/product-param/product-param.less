@@ -1,0 +1,29 @@
+@import (reference) '../../less/variables.less';
+
+.product-param {
+
+}
+
+.product-param__name {
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 1.6;
+    color: rgba(0, 0, 0, 0.87);
+    border-bottom: 1px solid @color-blue;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+    padding-right: 12px;
+    text-transform: uppercase;
+
+    @media(min-width: @desktop-medium) {
+        font-size: 12px;
+        line-height: 1.33;
+    }
+}
+
+.product-param__value {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.71;
+    color: rgba(0, 0, 0, 0.87);
+}

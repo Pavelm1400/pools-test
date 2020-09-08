@@ -1,0 +1,127 @@
+@import (reference) '../../less/variables.less';
+
+.page-content {
+
+}
+
+.page-content__mobile-crumb {
+    display: flex;
+    padding: 0 16px;
+    margin: 16px 0;
+
+    @media(min-width: @tablet-landscape) {
+        display: none;
+    }
+}
+
+.page-content__crumb-link {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 2;
+    color: @color-blue;
+}
+
+.page-content__breadcrumbs {
+    display: none;
+
+    @media(min-width: @tablet-landscape) {
+        display: block;
+        margin-bottom: 16px;
+    }
+}
+
+.page-content__title {
+    margin-bottom: 24px;
+
+    @media(min-width: @desktop-medium) {
+        margin-bottom: 40px;
+    }
+}
+
+.page-content__wrapper {
+
+    &_indent_s {
+        padding-top: 74px;
+    }
+
+    &_indent_xs {
+        @media (min-width: @tablet-landscape) {
+            margin-top: 48px;
+        }
+    }
+
+    &_indent_xxs {
+        @media (min-width: @tablet-landscape) {
+            margin-top: 24px;
+        }
+    }
+
+
+    &_relative {
+        position: relative;
+    }
+
+    &_flexible {
+        display: flex;
+        flex-direction: column;
+        .page-content__title {
+            order: 2;
+        }
+
+        .page-content__filter {
+            order: 1;
+            margin-bottom: 24px;
+        }
+
+        .page-content__inner {
+            order: 3;
+        }
+    }
+
+    @media(min-width: @tablet-landscape) {
+
+        &_indent_s {
+            padding-top: 0;
+        }
+
+        &_flexible {
+
+            .page-content__title {
+                order: 1;
+            }
+
+            .page-content__filter {
+                order: 2;
+                margin-bottom: 40px;
+            }
+
+            .page-content__inner {
+                order: 3;
+            }
+        }
+    }
+}
+
+.page-content__filter {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    @media(min-width: @tablet-landscape) {
+        padding: 0 40px;
+        position: relative;
+        top: unset;
+        left: unset;
+    }
+
+    @media(min-width: @desktop-medium) {
+        max-width: 1440px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 64px;
+    }
+}
+
+

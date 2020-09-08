@@ -1,0 +1,38 @@
+@import (reference) '../../less/variables.less';
+
+.product-delivery {
+
+}
+
+.product-delivery__text {
+    margin-bottom: 40px;
+}
+
+.product-delivery__gallery {
+
+    @media(min-width: @desktop-medium) {
+        display: flex;
+    }
+}
+
+.product-delivery__image {
+    height: 216px;
+
+
+    &:not(:last-child) {
+        margin-bottom: 32px;
+    }
+
+    @media(min-width: @desktop-medium) {
+        height: 480px;
+        &:not(:last-child) {
+            margin-bottom: 0;
+            margin-right: 32px;
+        }
+    }
+}
+
+.product-delivery__picture {
+    max-height: 100%;
+    max-width: 100%;
+}

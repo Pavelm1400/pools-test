@@ -1,0 +1,22 @@
+@import (reference) '../../less/variables.less';
+
+.page-section {
+
+    &:not(:last-child) {
+        margin-bottom: 40px;
+    }
+
+    @media(min-width: @tablet-landscape) {
+        &:not(:last-child) {
+            margin-bottom: 80px;
+        }
+    }
+}
+
+.page-section__title {
+    margin-bottom: 32px;
+
+    @media(min-width: @tablet-landscape) {
+        margin-bottom: 52px;
+    }
+}

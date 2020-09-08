@@ -1,0 +1,69 @@
+@import (reference) '../../less/variables.less';
+
+.product-options {
+    @media(min-width: @desktop-medium) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.product-options__item {
+    &:not(:last-child) {
+        margin-bottom: 24px;
+    }
+
+    @media(min-width: @desktop-medium) {
+        &:not(:last-child) {
+            margin-bottom: 0;
+            margin-right: 80px;
+        }
+    }
+}
+
+.product-options__title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 8px;
+
+    @media(min-width: @desktop-medium) {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+        margin-bottom: 16px;
+    }
+}
+
+.product-options__list {
+
+}
+
+.product-options__list-item {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    padding-left: 8px;
+
+    &:before {
+        content: '';
+        display: block;
+        width: 4px;
+        height: 4px;
+        background-color: @color-blue;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 8px;
+    }
+
+    @media(min-width: @desktop-medium) {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+}

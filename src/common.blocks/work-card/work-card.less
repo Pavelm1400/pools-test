@@ -1,0 +1,166 @@
+@import (reference) '../../less/variables.less';
+
+.work-card {
+    display: block;
+    width: 100%;
+
+    @media(min-width: @desktop-medium) {
+        height: 100%;
+    }
+
+    &:hover {
+        .work-card__frame {
+            background-size: 110% 110%;
+        }
+
+        .work-card__overlay {
+            opacity: 1;
+        }
+
+        .work-card__arrow {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+}
+
+.work-card__frame {
+    min-height: 392px;
+    background-position: center;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: flex-end;
+    transition: @transition-all;
+
+    @media(min-width: @desktop-medium) {
+        height: 100%;
+        align-items: unset;
+        min-height: unset;
+    }
+}
+
+.work-card__information {
+    width: 100%;
+}
+
+.work-card__wrapper {
+    position: relative;
+    min-height: 196px;
+
+    @media(min-width: @desktop-medium) {
+        min-height: unset;
+        width: 50%;
+        height: 100%;
+        margin-left: auto;
+    }
+}
+
+.work-card__overlay {
+    background-color: @color-main;
+    opacity: .9;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    transition: @transition-all;
+
+}
+
+.work-card__content {
+    position: relative;
+    z-index: 2;
+    padding: 24px 16px 16px;
+    height: 100%;
+
+    @media(min-width: @desktop-medium) {
+        padding: 64px 32px 42px;
+    }
+}
+
+.work-card__title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: @color-white;
+    margin-bottom: 24px;
+
+    @media(min-width: @desktop-medium) {
+        min-height: 96px;
+        font-size: 23px;
+        font-weight: 500;
+        line-height: 1.41;
+        margin-bottom: 54px;
+    }
+}
+
+.work-card__address {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+
+    @media(min-width: @desktop-medium) {
+        margin-bottom: 78px;
+    }
+}
+
+.work-card__pointer {
+    width: 16px;
+    height: 16px;
+    flex: 0 0 16px;
+
+    @media(min-width: @desktop-medium) {
+        width: 22px;
+        height: 22px;
+        flex: 0 0 22px;
+    }
+}
+
+.work-card__caption {
+    display: block;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 1.7;
+    color: @color-white;
+    margin-left: 10px;
+
+    @media(min-width: @desktop-medium) {
+        font-size: 18px;
+        line-height: 1.5;
+        margin-left: 4px;
+        font-weight: 400;
+    }
+}
+
+.work-card__date {
+    @media(min-width: @desktop-medium) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.work-card__date-info {
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 2;
+    color: @color-white;
+}
+
+.work-card__arrow {
+    display: none;
+
+    @media(min-width: @desktop-medium) {
+        display: block;
+        width: 40px;
+        height: 40px;
+        flex: 0 0 40px;
+        fill: @color-white;
+        margin-left: 24px;
+        transition: @transition-all;
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+}

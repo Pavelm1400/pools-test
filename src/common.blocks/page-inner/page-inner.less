@@ -1,0 +1,50 @@
+@import (reference) '../../less/variables.less';
+
+.page-inner {
+    padding: 16px 0 40px;
+    flex: 1 0 auto;
+
+    &_content {
+        padding: 24px 0 40px;
+    }
+
+    &_content_m {
+        padding: 24px 0 40px;
+    }
+
+    &_unpadded_top {
+        padding: 0 0 40px;
+    }
+
+    &_unpadded_bottom {
+        padding: 24px 0 0;
+    }
+
+    &_unpadded_top_s {
+        padding: 0 0 40px;
+    }
+
+    @media(min-width: @tablet-landscape) {
+        padding: 32px 0 80px;
+
+        &_content {
+            padding: 40px 0 80px;
+        }
+
+        &_content_m {
+            padding: 24px 0 80px;
+        }
+
+        &_unpadded_top {
+            padding: 40px 0 80px;
+        }
+
+        &_unpadded_bottom {
+            padding: 24px 0 80px;
+        }
+
+        &_unpadded_top_s {
+            padding: 24px 0 80px;
+        }
+    }
+}
